@@ -13,8 +13,13 @@
     "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix"
   },
   "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.2",
+    "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.25.3",
+    "nitropack": "^2.10.4",
     "nuxt": "^2.15.8",
+    "sweetalert2": "^11.15.3",
+    "swiper": "^6.8.4",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"

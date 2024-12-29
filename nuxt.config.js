@@ -33,8 +33,23 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
-
+  modules: [
+    '@nuxtjs/dotenv',
+    '@nuxtjs/sitemap'
+  ],
+  sitemap: {
+    hostname: 'https://www.stagerestyling.ca',
+    routes: [
+      { url: '/', changefreq: 'daily', priority: 1.0 },
+      { url: '/#home', changefreq: 'weekly', priority: 0.9 },
+      { url: '/#about', changefreq: 'weekly', priority: 0.8 },
+      { url: '/#service', changefreq: 'weekly', priority: 0.8 },
+      { url: '/#portfolio', changefreq: 'monthly', priority: 0.7 },
+      { url: '/#contact', changefreq: 'monthly', priority: 0.6 },
+    ],
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  target: 'static'
 }
